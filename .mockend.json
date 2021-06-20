@@ -1,0 +1,22 @@
+{
+  "User": {
+    "name": "string",
+    "handle": "string",
+    "about": "string",
+    "profile-image": "string",
+    "joinedAt": "date",
+    "location": "string"
+  },
+  "Tweet": {
+    "userId": "int",
+    "title": "string",
+    "likes": "int",
+    "tweetedAt": "date",
+    "comments": "Comment[]"
+  },
+  "Comment": {
+    "likes": "int",
+    "body": "string",
+    "post": "Post"
+  }
+}
