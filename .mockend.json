@@ -8,7 +8,7 @@
     "location": "string"
   },
   "Tweet": {
-    "userId": "int",
+    "userId": "User",
     "title": "string",
     "likes": "int",
     "tweetedAt": "date",
@@ -17,6 +17,6 @@
   "Comment": {
     "likes": "int",
     "body": "string",
-    "post": "Post"
+    "tweet": "Tweet"
   }
 }
