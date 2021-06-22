@@ -18,10 +18,12 @@ const drawerWidthMd = 60
 
 const useStyles = makeStyles({
   marginLeftMd: {
-    marginLeft: drawerWidthMd + 10
+    marginLeft: drawerWidthMd + 70,
+    marginRight: 70
   },
   marginLeftLg: {
-    marginLeft: drawerWidthLg + 10
+    marginLeft: drawerWidthLg + 70,
+    marginRight: 70
   }
 })
 

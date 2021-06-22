@@ -1,13 +1,13 @@
 import React from 'react'
 import clsx from 'clsx'
-import { makeStyles } from '@material-ui/core/styles'
 import {
   Hidden,
   Drawer,
   List,
   ListItem,
   ListItemIcon,
-  ListItemText
+  ListItemText,
+  Avatar
 } from '@material-ui/core'
 import TwitterIcon from '@material-ui/icons/Twitter'
 import HomeIcon from '@material-ui/icons/Home'
@@ -16,45 +16,13 @@ import NotificationsIcon from '@material-ui/icons/Notifications'
 import PersonIcon from '@material-ui/icons/Person'
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz'
 import { IDrawerProps } from '../Interfaces'
+import { sidebarStyles } from '../styling/customStyles'
 
-const useStyles = makeStyles({
-  drawer: {
-    width: (props: IDrawerProps) => props.drawerWidth,
-    overflowX: 'hidden'
-  },
-  drawerPaper: {
-    width: (props: IDrawerProps) => props.drawerWidth,
-    overflowX: 'hidden',
-    background: 'transparent'
-  },
-  listItemIconPadding: {
-    display: 'block',
-    fontSize: '2rem',
-    minWidth: 0
-  },
-  buttonHover: {
-    '&:hover': {
-      background: '#031019',
-      color: '#1DA1F2',
-      '& .MuiListItemIcon-root': {
-        color: '#1DA1F2'
-      }
-    }
-  },
-  textStyle: {
-    fontSize: '1.25rem',
-    fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
-    fontWeight: 600,
-    lineHeight: '1.75',
-    letterSpacing: '0.02857em'
-  },
-  iconSize: {
-    fontSize: '1.25rem'
-  }
-})
+// Todo: Make hover border radius circle on compressed view
+// Add Tweet button
 
 const Sidebar: React.FC<IDrawerProps> = ({ drawerWidth }) => {
-  const classes = useStyles({ drawerWidth })
+  const classes = sidebarStyles({ drawerWidth })
   const drawerList = ['Home', 'Explore', 'Notifications', 'Profile', 'More']
   const drawerListIcons = [
     <HomeIcon />,
@@ -73,12 +41,8 @@ const Sidebar: React.FC<IDrawerProps> = ({ drawerWidth }) => {
       }}
       anchor='left'
     >
-      <List>
-        <ListItem
-          button
-          className={classes.buttonHover}
-          style={{ justifyContent: 'center' }}
-        >
+      <List style={{ height: '100%' }}>
+        <ListItem button className={classes.buttonHover}>
           <ListItemIcon
             className={clsx({
               [classes.listItemIconPadding]: drawerWidth < 240
@@ -107,6 +71,30 @@ const Sidebar: React.FC<IDrawerProps> = ({ drawerWidth }) => {
             </Hidden>
           </ListItem>
         ))}
+        <ListItem
+          button
+          className={classes.buttonHover}
+          style={{ position: 'absolute', bottom: 0 }}
+        >
+          <ListItemIcon
+            className={clsx({
+              [classes.listItemIconPadding]: drawerWidth < 240
+            })}
+          >
+            <Avatar
+              alt='Remy Sharp'
+              src='https://material-ui.com/static/images/avatar/3.jpg'
+            />
+          </ListItemIcon>
+          <Hidden mdDown>
+            <ListItemText
+              primary={'Remy Sharp'}
+              classes={{
+                primary: classes.textStyle
+              }}
+            />
+          </Hidden>
+        </ListItem>
       </List>
     </Drawer>
   )
