@@ -37,6 +37,24 @@ export const sidebarStyles = makeStyles({
   },
   iconSize: {
     fontSize: '1.25rem'
+  },
+  tweetButton: {
+    padding: '12px 0px',
+    fontSize: '1rem',
+    borderRadius: '50rem',
+    color: 'white',
+    width: '100%',
+    textTransform: 'none',
+    '&:hover': {
+      background: 'rgb(26,145,218)'
+    }
+  },
+  tweetButtonSm: {
+    background: '#1DA1F2',
+    color: 'white',
+    '&:hover': {
+      background: 'rgb(26,145,218)'
+    }
   }
 })
 
@@ -46,7 +64,6 @@ export const searchStyles = makeStyles((theme: Theme) =>
       padding: '2px 4px',
       display: 'flex',
       alignItems: 'center',
-      width: 400,
       borderRadius: '50rem'
     },
     input: {
