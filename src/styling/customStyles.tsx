@@ -23,6 +23,7 @@ export const sidebarStyles = makeStyles({
     '&:hover': {
       background: '#031019',
       color: '#1DA1F2',
+      borderRadius: '50rem',
       '& .MuiListItemIcon-root': {
         color: '#1DA1F2'
       }
@@ -79,3 +80,25 @@ export const searchStyles = makeStyles((theme: Theme) =>
     }
   })
 )
+
+export const latestNewsStyles = makeStyles({
+  loadMoreBtn: {
+    '&:hover': {
+      backgroundImage:
+        'linear-gradient(rgba(255, 255, 255, 0.08), transparent)',
+      backgroundColor: 'transparent'
+    }
+  }
+})
+
+export const feedStyles = makeStyles({
+  tweet: {
+    '&hover': {
+      backgroundColor: 'rgba(255, 255, 255, 0.03)'
+    }
+  },
+  tweeterImage: {
+    alignSelf: 'start',
+    marginTop: '0.55rem'
+  }
+})

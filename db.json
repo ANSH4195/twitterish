@@ -1,0 +1,566 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Michael Schumm Jr.",
+      "handle": "Vergie.Rowe2",
+      "avatar": "https://cdn.fakercloud.com/avatars/stefvdham_128.jpg",
+      "about": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+      "location": "Ozellafurt",
+      "joinedAt": "Tue Mar 30 2021 21:26:35 GMT+0530 (India Standard Time)",
+      "password": "123456"
+    },
+    {
+      "id": "3",
+      "name": "Stacy Effertz",
+      "handle": "Alfonzo.Tromp5",
+      "avatar": "https://cdn.fakercloud.com/avatars/polarity_128.jpg",
+      "about": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+      "location": "East Murphychester",
+      "joinedAt": "Wed Mar 31 2021 14:51:09 GMT+0530 (India Standard Time)",
+      "password": "123456"
+    },
+    {
+      "id": "5",
+      "name": "Ebony Kessler",
+      "handle": "Yoshiko_Kuvalis",
+      "avatar": "https://cdn.fakercloud.com/avatars/salleedesign_128.jpg",
+      "about": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
+      "location": "Camarillo",
+      "joinedAt": "Thu Nov 05 2020 14:21:06 GMT+0530 (India Standard Time)",
+      "password": "123456"
+    },
+    {
+      "id": "2",
+      "name": "Erica Wilkinson",
+      "handle": "Adaline.Wintheiser60",
+      "avatar": "https://cdn.fakercloud.com/avatars/sovesove_128.jpg",
+      "about": "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
+      "location": "Scottsdale",
+      "joinedAt": "Mon Apr 26 2021 04:46:39 GMT+0530 (India Standard Time)",
+      "password": "123456"
+    },
+    {
+      "id": "4",
+      "name": "Jaime Parker",
+      "handle": "Fernando93",
+      "avatar": "https://cdn.fakercloud.com/avatars/dixchen_128.jpg",
+      "about": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+      "location": "Hilpertmouth",
+      "joinedAt": "Thu Feb 11 2021 15:18:02 GMT+0530 (India Standard Time)",
+      "password": "123456"
+    }
+  ],
+  "tweets": [
+    {
+      "id": "3b55ab7c-dc97-4bdd-904c-10e2918d91ae",
+      "userId": "4",
+      "userName": "Jaime Parker",
+      "userHandle": "Fernando93",
+      "userAvatar": "https://cdn.fakercloud.com/avatars/dixchen_128.jpg",
+      "tweetedAt": "Sun Jul 04 2021 09:48:27 GMT+0530 (India Standard Time)",
+      "body": "Quasi vero laboriosam eaque ab explicabo. Est doloremque harum ad natus possimus quod. Ducimus ab facere. Natus id amet autem sunt.",
+      "likes": "121",
+      "retweets": "14",
+      "comments": [
+        {
+          "id": "0ef615db-788a-4370-8bad-a3729784b0e9",
+          "commentedAt": "Sun Jul 04 2021 17:44:21 GMT+0530 (India Standard Time)",
+          "body": "Corporis est error error.",
+          "likes": "13",
+          "retweets": "0"
+        },
+        {
+          "id": "292232ea-a302-4df3-a479-caa38947a57b",
+          "commentedAt": "Sun Jul 04 2021 13:20:00 GMT+0530 (India Standard Time)",
+          "body": "Quasi non dicta.",
+          "likes": "16",
+          "retweets": "5"
+        },
+        {
+          "id": "daf11853-b0c1-4356-8ee3-3bb372a7bbbf",
+          "commentedAt": "Sun Jul 04 2021 16:48:18 GMT+0530 (India Standard Time)",
+          "body": "Voluptatem assumenda et et laudantium fugiat nisi aut.",
+          "likes": "15",
+          "retweets": "4"
+        }
+      ]
+    },
+    {
+      "id": "6bb676ff-e1a2-4fd0-ba89-1d923def0df0",
+      "userId": "2",
+      "userName": "Erica Wilkinson",
+      "userHandle": "Adaline.Wintheiser60",
+      "userAvatar": "https://cdn.fakercloud.com/avatars/sovesove_128.jpg",
+      "tweetedAt": "Sun Jul 04 2021 12:00:40 GMT+0530 (India Standard Time)",
+      "body": "Dolores itaque at necessitatibus. Qui suscipit natus nam debitis ad hic. Distinctio expedita quaerat blanditiis. Est aut amet sunt fugiat quis dolore alias. Ullam est eos et fugiat fugiat blanditiis doloremque. Vel placeat in aut.",
+      "likes": "67",
+      "retweets": "3",
+      "comments": [
+        {
+          "id": "1b7fbd6f-28f5-49bf-a59f-fdd07aad25ce",
+          "commentedAt": "Sun Jul 04 2021 04:20:12 GMT+0530 (India Standard Time)",
+          "body": "Voluptas voluptatem aut placeat minus porro eum architecto atque rem.",
+          "likes": "1",
+          "retweets": "8"
+        },
+        {
+          "id": "d402af51-23f5-4901-b8dd-d084cbeeb5fb",
+          "commentedAt": "Sun Jul 04 2021 16:25:20 GMT+0530 (India Standard Time)",
+          "body": "Quidem alias eaque unde dolorem minus necessitatibus ipsam et ipsum.",
+          "likes": "2",
+          "retweets": "0"
+        },
+        {
+          "id": "5b715ef5-e895-4210-941a-7e113ed9a268",
+          "commentedAt": "Sun Jul 04 2021 03:57:53 GMT+0530 (India Standard Time)",
+          "body": "Labore mollitia ipsa aut aliquid.",
+          "likes": "5",
+          "retweets": "8"
+        }
+      ]
+    },
+    {
+      "id": "370ff89c-c678-41fd-906b-20a71021eeea",
+      "userId": "3",
+      "userName": "Stacy Effertz",
+      "userHandle": "Alfonzo.Tromp5",
+      "userAvatar": "https://cdn.fakercloud.com/avatars/polarity_128.jpg",
+      "tweetedAt": "Sun Jul 04 2021 22:00:08 GMT+0530 (India Standard Time)",
+      "body": "Qui nam accusamus atque dolores eveniet modi ut. Officiis debitis vero eos. In odio error qui eaque enim rerum et ut. Omnis et quam corporis optio ut quibusdam.",
+      "likes": "106",
+      "retweets": "51",
+      "comments": [
+        {
+          "id": "598ab4e3-4004-4c30-b370-413b6a41b40b",
+          "commentedAt": "Sun Jul 04 2021 01:59:29 GMT+0530 (India Standard Time)",
+          "body": "Possimus illum porro sed enim modi quam ut alias.",
+          "likes": "3",
+          "retweets": "5"
+        },
+        {
+          "id": "74baab64-f3af-4157-8830-bb69a4777a7c",
+          "commentedAt": "Sun Jul 04 2021 09:02:03 GMT+0530 (India Standard Time)",
+          "body": "Amet distinctio inventore et maxime.",
+          "likes": "14",
+          "retweets": "0"
+        },
+        {
+          "id": "50874f87-d185-45f2-8532-81283a0dbce3",
+          "commentedAt": "Sun Jul 04 2021 16:33:57 GMT+0530 (India Standard Time)",
+          "body": "Nobis et ut laboriosam ea.",
+          "likes": "19",
+          "retweets": "9"
+        }
+      ]
+    },
+    {
+      "id": "562caee6-d164-4960-909f-752737a5553d",
+      "userId": "5",
+      "userName": "Ebony Kessler",
+      "userHandle": "Yoshiko_Kuvalis",
+      "userAvatar": "https://cdn.fakercloud.com/avatars/salleedesign_128.jpg",
+      "tweetedAt": "Sun Jul 04 2021 11:11:00 GMT+0530 (India Standard Time)",
+      "body": "Veniam est sequi porro eaque et eos itaque inventore rerum. Eum incidunt maiores. Rem esse et autem pariatur. Harum et quis consequatur ad est et. Ratione quia tenetur quos ex sed non voluptatem.",
+      "likes": "110",
+      "retweets": "54",
+      "comments": [
+        {
+          "id": "d577eccb-0e12-4cc1-811e-0bf7997b3c92",
+          "commentedAt": "Sun Jul 04 2021 13:18:07 GMT+0530 (India Standard Time)",
+          "body": "Ut consequatur ducimus quis velit nisi repellendus quo distinctio laboriosam.",
+          "likes": "3",
+          "retweets": "3"
+        },
+        {
+          "id": "7c2ad77d-7dd0-4e21-ac43-aafa116f9056",
+          "commentedAt": "Sun Jul 04 2021 14:25:20 GMT+0530 (India Standard Time)",
+          "body": "Voluptatum modi inventore distinctio omnis minima perferendis.",
+          "likes": "19",
+          "retweets": "2"
+        },
+        {
+          "id": "626f5a56-103c-4298-b656-2960184561bb",
+          "commentedAt": "Sun Jul 04 2021 00:04:42 GMT+0530 (India Standard Time)",
+          "body": "Laborum ab rerum sed.",
+          "likes": "9",
+          "retweets": "6"
+        }
+      ]
+    },
+    {
+      "id": "1d20f184-789e-4397-9c60-a30c5156f95b",
+      "userId": "3",
+      "userName": "Stacy Effertz",
+      "userHandle": "Alfonzo.Tromp5",
+      "userAvatar": "https://cdn.fakercloud.com/avatars/polarity_128.jpg",
+      "tweetedAt": "Sun Jul 04 2021 22:38:40 GMT+0530 (India Standard Time)",
+      "body": "Ipsam ipsam cupiditate illo eveniet impedit explicabo non. Alias eaque repellendus similique rerum eos minima. Voluptatem omnis error illo aut blanditiis dolores deserunt.",
+      "likes": "29",
+      "retweets": "35",
+      "comments": [
+        {
+          "id": "8fc65088-fc5f-4a7c-b600-c00acc876657",
+          "commentedAt": "Sun Jul 04 2021 04:44:26 GMT+0530 (India Standard Time)",
+          "body": "Quo nobis quia laudantium recusandae mollitia est odit quia.",
+          "likes": "17",
+          "retweets": "0"
+        },
+        {
+          "id": "6807f1e2-54c9-4876-a641-28040f28cbf2",
+          "commentedAt": "Sun Jul 04 2021 18:53:02 GMT+0530 (India Standard Time)",
+          "body": "Quia dicta sed sed inventore velit.",
+          "likes": "2",
+          "retweets": "2"
+        },
+        {
+          "id": "2fc615fb-2884-4457-89cd-0905e5019b4e",
+          "commentedAt": "Sun Jul 04 2021 15:05:29 GMT+0530 (India Standard Time)",
+          "body": "Dolore ab dolorem sint.",
+          "likes": "18",
+          "retweets": "0"
+        }
+      ]
+    },
+    {
+      "id": "9fd5b720-fdc1-48cc-bf6c-33c2b1aae979",
+      "userId": "3",
+      "userName": "Stacy Effertz",
+      "userHandle": "Alfonzo.Tromp5",
+      "userAvatar": "https://cdn.fakercloud.com/avatars/polarity_128.jpg",
+      "tweetedAt": "Sun Jul 04 2021 16:58:40 GMT+0530 (India Standard Time)",
+      "body": "Velit deleniti reprehenderit et vel. Error omnis ut et amet. Aperiam quisquam fuga dolorem totam sint rem dolor consequatur. Ab explicabo iste aut voluptas quia maxime iure. Et exercitationem laborum quo id et blanditiis itaque.",
+      "likes": "49",
+      "retweets": "7",
+      "comments": [
+        {
+          "id": "07565ce4-942a-4be6-939d-72b799b9dfc3",
+          "commentedAt": "Sun Jul 04 2021 08:39:26 GMT+0530 (India Standard Time)",
+          "body": "Perspiciatis nobis excepturi ad eum harum itaque alias repellat debitis.",
+          "likes": "9",
+          "retweets": "8"
+        },
+        {
+          "id": "6bae8c2e-ff85-4cd5-a002-92549b5ae1d0",
+          "commentedAt": "Sun Jul 04 2021 09:33:02 GMT+0530 (India Standard Time)",
+          "body": "Quos quidem labore et ex pariatur labore saepe.",
+          "likes": "19",
+          "retweets": "9"
+        },
+        {
+          "id": "28da0d09-14b7-4234-9b42-a75288faeb24",
+          "commentedAt": "Sun Jul 04 2021 12:46:28 GMT+0530 (India Standard Time)",
+          "body": "Ad nihil aspernatur quibusdam voluptatem aspernatur praesentium.",
+          "likes": "17",
+          "retweets": "9"
+        }
+      ]
+    },
+    {
+      "id": "87d5d8cf-7c0a-4f01-ad5b-683fe726c737",
+      "userId": "1",
+      "userName": "Michael Schumm Jr.",
+      "userHandle": "Vergie.Rowe2",
+      "userAvatar": "https://cdn.fakercloud.com/avatars/stefvdham_128.jpg",
+      "tweetedAt": "Sun Jul 04 2021 10:28:04 GMT+0530 (India Standard Time)",
+      "body": "Ab illum rem occaecati omnis. Error velit asperiores ipsa autem veniam tenetur. Molestiae ducimus eos dolorem ut iusto amet quisquam. Non saepe voluptatibus laudantium est et et est unde.",
+      "likes": "182",
+      "retweets": "55",
+      "comments": [
+        {
+          "id": "347189b4-6128-4984-bb19-fc307575c13f",
+          "commentedAt": "Sun Jul 04 2021 06:58:09 GMT+0530 (India Standard Time)",
+          "body": "Quam in cupiditate quia consequatur sapiente delectus atque eaque rerum.",
+          "likes": "8",
+          "retweets": "4"
+        },
+        {
+          "id": "705a10ac-21d6-4ca6-be7a-b0800f92211e",
+          "commentedAt": "Sun Jul 04 2021 22:46:36 GMT+0530 (India Standard Time)",
+          "body": "Cum tenetur sint eveniet facilis magni ut expedita ut.",
+          "likes": "6",
+          "retweets": "0"
+        },
+        {
+          "id": "efe6a4c5-216a-417e-8bc2-16a3c2335769",
+          "commentedAt": "Sun Jul 04 2021 12:21:47 GMT+0530 (India Standard Time)",
+          "body": "Quaerat dolor ullam.",
+          "likes": "1",
+          "retweets": "4"
+        }
+      ]
+    },
+    {
+      "id": "9780132d-701c-46ad-8709-d59f3e3eedad",
+      "userId": "5",
+      "userName": "Ebony Kessler",
+      "userHandle": "Yoshiko_Kuvalis",
+      "userAvatar": "https://cdn.fakercloud.com/avatars/salleedesign_128.jpg",
+      "tweetedAt": "Sun Jul 04 2021 01:47:03 GMT+0530 (India Standard Time)",
+      "body": "Eligendi sunt asperiores nisi veniam ullam vel ut beatae corrupti. Dicta quo repudiandae rerum laborum nulla. Rerum sed blanditiis vel qui eos.",
+      "likes": "182",
+      "retweets": "16",
+      "comments": [
+        {
+          "id": "2062783a-31fc-4942-a2ea-d50792628113",
+          "commentedAt": "Sun Jul 04 2021 14:49:06 GMT+0530 (India Standard Time)",
+          "body": "Repellat omnis est cupiditate cumque laudantium laudantium sint dolores.",
+          "likes": "2",
+          "retweets": "9"
+        },
+        {
+          "id": "1524d553-f106-4382-92df-c83b30f399e0",
+          "commentedAt": "Sun Jul 04 2021 09:44:26 GMT+0530 (India Standard Time)",
+          "body": "Libero neque sunt.",
+          "likes": "19",
+          "retweets": "2"
+        },
+        {
+          "id": "08ecdb21-d984-46a4-beec-7d6def51b37a",
+          "commentedAt": "Sun Jul 04 2021 17:09:58 GMT+0530 (India Standard Time)",
+          "body": "A et et nostrum aut consequatur consequatur laudantium expedita.",
+          "likes": "6",
+          "retweets": "0"
+        }
+      ]
+    },
+    {
+      "id": "0c94482c-8525-47f0-a428-cab5416a7740",
+      "userId": "1",
+      "userName": "Michael Schumm Jr.",
+      "userHandle": "Vergie.Rowe2",
+      "userAvatar": "https://cdn.fakercloud.com/avatars/stefvdham_128.jpg",
+      "tweetedAt": "Sun Jul 04 2021 13:36:29 GMT+0530 (India Standard Time)",
+      "body": "Iste quos quia. Quod qui tenetur tempore et velit molestias. Voluptatem nobis nam mollitia enim sit corrupti non ipsum et. Consequuntur voluptatum in autem id deleniti fugit architecto perspiciatis. Assumenda eos sit sed voluptatibus culpa.",
+      "likes": "168",
+      "retweets": "73",
+      "comments": [
+        {
+          "id": "188dc8d4-341d-419e-b164-77e81ba5fe0b",
+          "commentedAt": "Sun Jul 04 2021 22:40:43 GMT+0530 (India Standard Time)",
+          "body": "Voluptas vero omnis modi aut reiciendis quia consequatur.",
+          "likes": "5",
+          "retweets": "8"
+        },
+        {
+          "id": "67192f52-1887-471f-930c-73c8d0847216",
+          "commentedAt": "Sun Jul 04 2021 16:52:42 GMT+0530 (India Standard Time)",
+          "body": "Nostrum aut aperiam et et accusamus enim.",
+          "likes": "16",
+          "retweets": "1"
+        },
+        {
+          "id": "db95f842-6e56-4023-8424-3f05b7cdbf43",
+          "commentedAt": "Sun Jul 04 2021 01:53:02 GMT+0530 (India Standard Time)",
+          "body": "Porro voluptatem reprehenderit sunt.",
+          "likes": "15",
+          "retweets": "7"
+        }
+      ]
+    },
+    {
+      "id": "6740aac1-df71-4b6b-8547-cdc30ccea4ee",
+      "userId": "2",
+      "userName": "Erica Wilkinson",
+      "userHandle": "Adaline.Wintheiser60",
+      "userAvatar": "https://cdn.fakercloud.com/avatars/sovesove_128.jpg",
+      "tweetedAt": "Sun Jul 04 2021 09:55:55 GMT+0530 (India Standard Time)",
+      "body": "Qui error veritatis quis quo. Atque velit et asperiores unde quis non nesciunt omnis. Ipsum illo fuga dolores voluptatum ducimus harum occaecati voluptatum ab.",
+      "likes": "32",
+      "retweets": "2",
+      "comments": [
+        {
+          "id": "370b257d-d94a-4ce3-873b-db61bf86aea0",
+          "commentedAt": "Sun Jul 04 2021 15:12:05 GMT+0530 (India Standard Time)",
+          "body": "Accusamus ipsa saepe sed est rerum minima.",
+          "likes": "16",
+          "retweets": "9"
+        },
+        {
+          "id": "65d32c58-1a27-4f60-9450-87d25858751e",
+          "commentedAt": "Sun Jul 04 2021 03:10:49 GMT+0530 (India Standard Time)",
+          "body": "Voluptatem delectus accusantium minima natus aperiam itaque sunt laborum.",
+          "likes": "12",
+          "retweets": "7"
+        },
+        {
+          "id": "5b2a7f46-186b-478a-a81d-182e84d4a597",
+          "commentedAt": "Sun Jul 04 2021 09:39:48 GMT+0530 (India Standard Time)",
+          "body": "Maxime qui ut quo ullam impedit consectetur dolor deserunt.",
+          "likes": "17",
+          "retweets": "4"
+        }
+      ]
+    },
+    {
+      "id": "ab9512ff-6184-44b7-b520-b21ed9f080c0",
+      "userId": "1",
+      "userName": "Michael Schumm Jr.",
+      "userHandle": "Vergie.Rowe2",
+      "userAvatar": "https://cdn.fakercloud.com/avatars/stefvdham_128.jpg",
+      "tweetedAt": "Sun Jul 04 2021 15:36:44 GMT+0530 (India Standard Time)",
+      "body": "Sunt sequi itaque ea voluptatem explicabo non. Nesciunt earum voluptates nihil distinctio earum. Laborum sequi dolorem tempore alias rerum error aut. Non harum in veritatis.",
+      "likes": "126",
+      "retweets": "56",
+      "comments": [
+        {
+          "id": "b436a8a1-471c-423c-843c-2c443b17aff8",
+          "commentedAt": "Sun Jul 04 2021 13:02:36 GMT+0530 (India Standard Time)",
+          "body": "Quia corporis et accusantium nihil molestias alias nemo repellat.",
+          "likes": "17",
+          "retweets": "9"
+        },
+        {
+          "id": "17565d57-3c69-4df1-8249-e69d76509898",
+          "commentedAt": "Sun Jul 04 2021 09:48:22 GMT+0530 (India Standard Time)",
+          "body": "Laborum hic repellendus ducimus magni voluptatem in.",
+          "likes": "15",
+          "retweets": "2"
+        },
+        {
+          "id": "c23b4265-91e6-48e4-8b95-5ac868407760",
+          "commentedAt": "Sun Jul 04 2021 00:28:40 GMT+0530 (India Standard Time)",
+          "body": "Dolorem odio non itaque quis possimus.",
+          "likes": "18",
+          "retweets": "0"
+        }
+      ]
+    },
+    {
+      "id": "fd8e8ecd-0d2c-4328-aa04-2725174ba36a",
+      "userId": "3",
+      "userName": "Stacy Effertz",
+      "userHandle": "Alfonzo.Tromp5",
+      "userAvatar": "https://cdn.fakercloud.com/avatars/polarity_128.jpg",
+      "tweetedAt": "Sun Jul 04 2021 07:19:01 GMT+0530 (India Standard Time)",
+      "body": "Et recusandae veniam illum. Temporibus consectetur fugiat facere accusantium sequi vitae. Quisquam eos debitis delectus quas vitae. Totam sed vero deserunt. Distinctio unde aperiam.",
+      "likes": "139",
+      "retweets": "56",
+      "comments": [
+        {
+          "id": "d31f6641-f7c8-495b-b20c-152f5680dfe4",
+          "commentedAt": "Sun Jul 04 2021 05:07:41 GMT+0530 (India Standard Time)",
+          "body": "Distinctio autem fuga nihil ad qui placeat ab.",
+          "likes": "15",
+          "retweets": "3"
+        },
+        {
+          "id": "c473e8b8-8a0a-411f-8111-c409b1a96a3c",
+          "commentedAt": "Sun Jul 04 2021 09:04:37 GMT+0530 (India Standard Time)",
+          "body": "Qui iusto nostrum nihil et impedit.",
+          "likes": "3",
+          "retweets": "5"
+        },
+        {
+          "id": "d61f01ca-5e24-4c7c-8683-30b47d9b1921",
+          "commentedAt": "Sun Jul 04 2021 12:37:50 GMT+0530 (India Standard Time)",
+          "body": "Distinctio vel aut vitae dolores qui voluptatum enim facere.",
+          "likes": "5",
+          "retweets": "3"
+        }
+      ]
+    },
+    {
+      "id": "e26a9a8f-51d0-4e12-b14f-1435b23a5080",
+      "userId": "4",
+      "userName": "Jaime Parker",
+      "userHandle": "Fernando93",
+      "userAvatar": "https://cdn.fakercloud.com/avatars/dixchen_128.jpg",
+      "tweetedAt": "Sun Jul 04 2021 07:54:18 GMT+0530 (India Standard Time)",
+      "body": "Consectetur magni nostrum. Quia voluptas et magni temporibus quis vel tenetur occaecati. Praesentium sapiente nihil dolores et distinctio dolorum. Inventore in nihil consequatur voluptas enim voluptatem aut voluptas. Omnis enim dolorem harum sunt voluptas suscipit non.",
+      "likes": "196",
+      "retweets": "68",
+      "comments": [
+        {
+          "id": "36e067a8-9f4c-40a6-a960-b2ce1985c910",
+          "commentedAt": "Sun Jul 04 2021 02:48:20 GMT+0530 (India Standard Time)",
+          "body": "Eos accusantium velit iusto et ex occaecati magnam unde consequatur.",
+          "likes": "3",
+          "retweets": "9"
+        },
+        {
+          "id": "0347481f-a4ea-4df0-ba32-66596855e8a8",
+          "commentedAt": "Sun Jul 04 2021 16:18:07 GMT+0530 (India Standard Time)",
+          "body": "Ut maiores molestiae ratione sed iure.",
+          "likes": "5",
+          "retweets": "8"
+        },
+        {
+          "id": "0f5d8ffb-1fb4-4283-a533-37b5fd1ec05d",
+          "commentedAt": "Sun Jul 04 2021 17:03:52 GMT+0530 (India Standard Time)",
+          "body": "Aut est nesciunt expedita quas ullam incidunt rerum corporis laudantium.",
+          "likes": "9",
+          "retweets": "1"
+        }
+      ]
+    },
+    {
+      "id": "6c236df3-0392-4b03-a265-c3131e2896dc",
+      "userId": "4",
+      "userName": "Jaime Parker",
+      "userHandle": "Fernando93",
+      "userAvatar": "https://cdn.fakercloud.com/avatars/dixchen_128.jpg",
+      "tweetedAt": "Sun Jul 04 2021 19:26:59 GMT+0530 (India Standard Time)",
+      "body": "Qui quibusdam sequi veritatis quasi quam cupiditate dolores. Quo omnis et ut eius consequatur illum quod consequatur magni. Expedita ut ut rem quis aut qui eos.",
+      "likes": "167",
+      "retweets": "45",
+      "comments": [
+        {
+          "id": "c3f5bca2-2ba7-4cf1-a233-64b39c60111f",
+          "commentedAt": "Sun Jul 04 2021 20:48:00 GMT+0530 (India Standard Time)",
+          "body": "Dolor et eveniet est et qui laboriosam perferendis.",
+          "likes": "20",
+          "retweets": "6"
+        },
+        {
+          "id": "8bd4b115-5c35-42f4-a48a-df006f03b7c6",
+          "commentedAt": "Sun Jul 04 2021 09:33:39 GMT+0530 (India Standard Time)",
+          "body": "Repudiandae asperiores ea.",
+          "likes": "1",
+          "retweets": "4"
+        },
+        {
+          "id": "f363d678-f83f-4337-80b7-b0f9d40e1a3b",
+          "commentedAt": "Sun Jul 04 2021 02:38:31 GMT+0530 (India Standard Time)",
+          "body": "Modi accusantium voluptates iusto.",
+          "likes": "15",
+          "retweets": "4"
+        }
+      ]
+    },
+    {
+      "id": "99b44e2c-1d83-43da-82ef-56a0962290a3",
+      "userId": "3",
+      "userName": "Stacy Effertz",
+      "userHandle": "Alfonzo.Tromp5",
+      "userAvatar": "https://cdn.fakercloud.com/avatars/polarity_128.jpg",
+      "tweetedAt": "Sun Jul 04 2021 05:27:10 GMT+0530 (India Standard Time)",
+      "body": "Optio omnis et velit repellendus quos quis sint. Doloribus placeat omnis recusandae aut aut aperiam hic veritatis. Facere accusantium iste pariatur. Voluptatem et deserunt voluptas ut.",
+      "likes": "53",
+      "retweets": "69",
+      "comments": [
+        {
+          "id": "3ca3952f-0dc5-4418-bbad-44e10265de19",
+          "commentedAt": "Sun Jul 04 2021 18:09:50 GMT+0530 (India Standard Time)",
+          "body": "Quasi tenetur dignissimos sunt et velit et et.",
+          "likes": "9",
+          "retweets": "6"
+        },
+        {
+          "id": "1bb14727-3404-4fb4-9046-e0463108242d",
+          "commentedAt": "Sun Jul 04 2021 09:14:29 GMT+0530 (India Standard Time)",
+          "body": "Repellat error est voluptatem.",
+          "likes": "6",
+          "retweets": "5"
+        },
+        {
+          "id": "e51ddb47-89b6-45e1-8ebb-bc49b8261859",
+          "commentedAt": "Sun Jul 04 2021 08:10:17 GMT+0530 (India Standard Time)",
+          "body": "Asperiores asperiores delectus.",
+          "likes": "16",
+          "retweets": "0"
+        }
+      ]
+    }
+  ]
+}

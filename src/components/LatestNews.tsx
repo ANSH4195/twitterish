@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {
   Avatar,
   Box,
@@ -10,28 +10,39 @@ import {
   Paper,
   Typography
 } from '@material-ui/core'
-import { latestNews } from '../state/tmpData'
+import { INewsItem } from '../Interfaces'
+import { latestNewsStyles } from '../styling/customStyles'
+import { useAppDispatch, useAppSelector } from '../state/hooks'
+import { RootState } from '../state/store'
+import { getNews } from '../state/newsSlice'
 
 const LatestNews = () => {
+  const { loadMoreBtn } = latestNewsStyles()
+
+  const dispatch = useAppDispatch()
+  const { loading, error, news } = useAppSelector(
+    (state: RootState) => state.news
+  )
+
+  useEffect(() => {
+    dispatch(getNews({ perPage: 5, page: 1 }))
+  }, [dispatch])
+
   const loadNews = () => {
-    return latestNews.map((news) => {
+    return news.map((value: INewsItem) => {
       return (
-        <React.Fragment key={news.id}>
-          <ListItem button>
+        <React.Fragment key={value.title}>
+          <ListItem button component='a' href={value.url} target='_blank'>
             <ListItemText
               primary={
                 <Typography variant='caption' color='textSecondary'>
-                  {news.by}
+                  <strong>{value.source.name}</strong> | {value.author}
                 </Typography>
               }
-              secondary={<Typography variant='body1'>{news.title}</Typography>}
+              secondary={<Typography variant='body1'>{value.title}</Typography>}
             />
             <ListItemAvatar>
-              <Avatar
-                id={`news-item-${news.id}`}
-                src={news.image}
-                alt={news.title}
-              />
+              <Avatar src={value.urlToImage!} alt={value.title} />
             </ListItemAvatar>
           </ListItem>
           <Divider />
@@ -40,7 +51,11 @@ const LatestNews = () => {
     })
   }
 
-  return (
+  return loading ? (
+    <p>Loading...</p>
+  ) : error ? (
+    <p>{error}</p>
+  ) : (
     <Box pt={2}>
       <Paper style={{ borderRadius: '20px' }}>
         <List>
@@ -59,7 +74,7 @@ const LatestNews = () => {
           </ListItem>
           <Divider />
           {loadNews()}
-          <ListItem button>
+          <ListItem button className={loadMoreBtn}>
             <ListItemText primary='Load More' style={{ color: '#1da1f2' }} />
           </ListItem>
         </List>

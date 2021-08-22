@@ -1,7 +1,12 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit'
+import tweetsReducer from './tweetsSlice'
+import newsReducer from './newsSlice'
 
 export const store = configureStore({
-  reducer: {}
+  reducer: {
+    tweets: tweetsReducer,
+    news: newsReducer
+  }
 })
 
 export type AppDispatch = typeof store.dispatch

@@ -22,8 +22,6 @@ import CreateIcon from '@material-ui/icons/Create'
 import { IDrawerProps } from '../Interfaces'
 import { sidebarStyles } from '../styling/customStyles'
 
-// Todo: Make hover border radius circle on compressed view
-
 const Sidebar: React.FC<IDrawerProps> = ({ drawerWidth }) => {
   const classes = sidebarStyles({ drawerWidth })
   const drawerList = ['Home', 'Explore', 'Notifications', 'Profile', 'More']
@@ -100,30 +98,32 @@ const Sidebar: React.FC<IDrawerProps> = ({ drawerWidth }) => {
             </Tooltip>
           </Hidden>
         </ListItem>
-        <ListItem
-          button
-          className={classes.buttonHover}
-          style={{ position: 'absolute', bottom: 0 }}
-        >
-          <ListItemIcon
-            className={clsx({
-              [classes.listItemIconPadding]: drawerWidth < 240
-            })}
+        <Tooltip title='Profile' arrow placement='right' enterDelay={1000}>
+          <ListItem
+            button
+            className={classes.buttonHover}
+            style={{ position: 'absolute', bottom: 0 }}
           >
-            <Avatar
-              alt='Remy Sharp'
-              src='https://material-ui.com/static/images/avatar/3.jpg'
-            />
-          </ListItemIcon>
-          <Hidden mdDown>
-            <ListItemText
-              primary={'Remy Sharp'}
-              classes={{
-                primary: classes.textStyle
-              }}
-            />
-          </Hidden>
-        </ListItem>
+            <ListItemIcon
+              className={clsx({
+                [classes.listItemIconPadding]: drawerWidth < 240
+              })}
+            >
+              <Avatar
+                alt='Remy Sharp'
+                src='https://material-ui.com/static/images/avatar/3.jpg'
+              />
+            </ListItemIcon>
+            <Hidden mdDown>
+              <ListItemText
+                primary={'Remy Sharp'}
+                classes={{
+                  primary: classes.textStyle
+                }}
+              />
+            </Hidden>
+          </ListItem>
+        </Tooltip>
       </List>
     </Drawer>
   )
