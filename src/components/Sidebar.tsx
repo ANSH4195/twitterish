@@ -1,5 +1,5 @@
-import React from 'react'
-import clsx from 'clsx'
+import React from 'react';
+import clsx from 'clsx';
 import {
   Hidden,
   Drawer,
@@ -10,35 +10,39 @@ import {
   Avatar,
   Button,
   IconButton,
-  Tooltip
-} from '@material-ui/core'
-import TwitterIcon from '@material-ui/icons/Twitter'
-import HomeIcon from '@material-ui/icons/Home'
-import LineStyleIcon from '@material-ui/icons/LineStyle'
-import NotificationsIcon from '@material-ui/icons/Notifications'
-import PersonIcon from '@material-ui/icons/Person'
-import MoreHorizIcon from '@material-ui/icons/MoreHoriz'
-import CreateIcon from '@material-ui/icons/Create'
-import { IDrawerProps } from '../Interfaces'
-import { sidebarStyles } from '../styling/customStyles'
+  Tooltip,
+  Divider,
+} from '@material-ui/core';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import CreateIcon from '@material-ui/icons/Create';
+import { IDrawerProps } from '../Interfaces';
+import { sidebarStyles } from '../styling/customStyles';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faFeatherAlt,
+  faHashtag,
+  faHome,
+  faSpinner,
+} from '@fortawesome/free-solid-svg-icons';
+import { faBell, faUser } from '@fortawesome/free-regular-svg-icons';
 
 const Sidebar: React.FC<IDrawerProps> = ({ drawerWidth }) => {
-  const classes = sidebarStyles({ drawerWidth })
-  const drawerList = ['Home', 'Explore', 'Notifications', 'Profile', 'More']
+  const classes = sidebarStyles({ drawerWidth });
+  const drawerList = ['Home', 'Explore', 'Notifications', 'Profile', 'More'];
   const drawerListIcons = [
-    <HomeIcon />,
-    <LineStyleIcon />,
-    <NotificationsIcon />,
-    <PersonIcon />,
-    <MoreHorizIcon />
-  ]
+    <FontAwesomeIcon icon={faHome} />,
+    <FontAwesomeIcon icon={faHashtag} />,
+    <FontAwesomeIcon icon={faBell} />,
+    <FontAwesomeIcon icon={faUser} />,
+    <FontAwesomeIcon icon={faSpinner} />,
+  ];
 
   return (
     <Drawer
       className={classes.drawer}
       variant='permanent'
       classes={{
-        paper: classes.drawerPaper
+        paper: classes.drawerPaper,
       }}
       anchor='left'
     >
@@ -46,7 +50,7 @@ const Sidebar: React.FC<IDrawerProps> = ({ drawerWidth }) => {
         <ListItem button className={classes.buttonHover}>
           <ListItemIcon
             className={clsx({
-              [classes.listItemIconPadding]: drawerWidth < 240
+              [classes.listItemIconPadding]: drawerWidth < 240,
             })}
             style={{ justifyContent: 'center' }}
           >
@@ -64,7 +68,8 @@ const Sidebar: React.FC<IDrawerProps> = ({ drawerWidth }) => {
             <ListItem button className={classes.buttonHover}>
               <ListItemIcon
                 className={clsx({
-                  [classes.listItemIconPadding]: drawerWidth < 240
+                  [classes.iconSize]: true,
+                  [classes.listItemIconPadding]: drawerWidth < 240,
                 })}
               >
                 {drawerListIcons[index]}
@@ -73,7 +78,7 @@ const Sidebar: React.FC<IDrawerProps> = ({ drawerWidth }) => {
                 <ListItemText
                   primary={text}
                   classes={{
-                    primary: classes.textStyle
+                    primary: classes.textStyle,
                   }}
                 />
               </Hidden>
@@ -93,7 +98,7 @@ const Sidebar: React.FC<IDrawerProps> = ({ drawerWidth }) => {
           <Hidden lgUp>
             <Tooltip title='Tweet' arrow placement='right' enterDelay={1000}>
               <IconButton aria-label='tweet' className={classes.tweetButtonSm}>
-                <CreateIcon />
+                <FontAwesomeIcon icon={faFeatherAlt} />
               </IconButton>
             </Tooltip>
           </Hidden>
@@ -106,7 +111,7 @@ const Sidebar: React.FC<IDrawerProps> = ({ drawerWidth }) => {
           >
             <ListItemIcon
               className={clsx({
-                [classes.listItemIconPadding]: drawerWidth < 240
+                [classes.listItemIconPadding]: drawerWidth < 240,
               })}
             >
               <Avatar
@@ -118,7 +123,7 @@ const Sidebar: React.FC<IDrawerProps> = ({ drawerWidth }) => {
               <ListItemText
                 primary={'Remy Sharp'}
                 classes={{
-                  primary: classes.textStyle
+                  primary: classes.textStyle,
                 }}
               />
             </Hidden>
@@ -126,7 +131,7 @@ const Sidebar: React.FC<IDrawerProps> = ({ drawerWidth }) => {
         </Tooltip>
       </List>
     </Drawer>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;

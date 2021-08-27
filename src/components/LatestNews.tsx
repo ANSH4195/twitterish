@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
 import {
   Avatar,
   Box,
@@ -8,25 +8,22 @@ import {
   ListItemAvatar,
   ListItemText,
   Paper,
-  Typography
-} from '@material-ui/core'
-import { INewsItem } from '../Interfaces'
-import { latestNewsStyles } from '../styling/customStyles'
-import { useAppDispatch, useAppSelector } from '../state/hooks'
-import { RootState } from '../state/store'
-import { getNews } from '../state/newsSlice'
+  Typography,
+} from '@material-ui/core';
+import { INewsItem } from '../Interfaces';
+import { useAppDispatch, useAppSelector } from '../state/hooks';
+import { RootState } from '../state/store';
+import { getNews } from '../state/newsSlice';
 
 const LatestNews = () => {
-  const { loadMoreBtn } = latestNewsStyles()
-
-  const dispatch = useAppDispatch()
+  const dispatch = useAppDispatch();
   const { loading, error, news } = useAppSelector(
     (state: RootState) => state.news
-  )
+  );
 
   useEffect(() => {
-    dispatch(getNews({ perPage: 5, page: 1 }))
-  }, [dispatch])
+    dispatch(getNews({ perPage: 5, page: 1 }));
+  }, [dispatch]);
 
   const loadNews = () => {
     return news.map((value: INewsItem) => {
@@ -36,10 +33,11 @@ const LatestNews = () => {
             <ListItemText
               primary={
                 <Typography variant='caption' color='textSecondary'>
-                  <strong>{value.source.name}</strong> | {value.author}
+                  <strong>{value.source.name}</strong>
+                  {value.author && ` | ${value.author}`}
                 </Typography>
               }
-              secondary={<Typography variant='body1'>{value.title}</Typography>}
+              secondary={<Typography variant='body2'>{value.title}</Typography>}
             />
             <ListItemAvatar>
               <Avatar src={value.urlToImage!} alt={value.title} />
@@ -47,9 +45,9 @@ const LatestNews = () => {
           </ListItem>
           <Divider />
         </React.Fragment>
-      )
-    })
-  }
+      );
+    });
+  };
 
   return loading ? (
     <p>Loading...</p>
@@ -58,7 +56,7 @@ const LatestNews = () => {
   ) : (
     <Box pt={2}>
       <Paper style={{ borderRadius: '20px' }}>
-        <List>
+        <List style={{ padding: '0' }}>
           <ListItem>
             <ListItemText
               primary={
@@ -74,13 +72,16 @@ const LatestNews = () => {
           </ListItem>
           <Divider />
           {loadNews()}
-          <ListItem button className={loadMoreBtn}>
+          <ListItem
+            button
+            style={{ borderRadius: '0 0 20px 20px' }}
+          >
             <ListItemText primary='Load More' style={{ color: '#1da1f2' }} />
           </ListItem>
         </List>
       </Paper>
     </Box>
-  )
-}
+  );
+};
 
-export default LatestNews
+export default LatestNews;

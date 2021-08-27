@@ -1,42 +1,42 @@
-import React from 'react'
-import clsx from 'clsx'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import React from 'react';
+import clsx from 'clsx';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import {
   Box,
   CssBaseline,
   makeStyles,
   ThemeProvider,
   useMediaQuery,
-  useTheme
-} from '@material-ui/core'
-import { darkTheme } from './styling/themes'
-import Home from './components/Home'
-import Sidebar from './components/Sidebar'
+  useTheme,
+} from '@material-ui/core';
+import { darkTheme } from './styling/themes';
+import Home from './components/Home';
+import Sidebar from './components/Sidebar';
 
-const drawerWidthLg = 240
-const drawerWidthMd = 60
+const drawerWidthLg = 240;
+const drawerWidthMd = 60;
 
 const useStyles = makeStyles({
   marginLeftMd: {
     marginLeft: drawerWidthMd + 60,
-    marginRight: 60
+    marginRight: 60,
   },
   marginLeftLg: {
     marginLeft: drawerWidthLg + 60,
-    marginRight: 60
-  }
-})
+    marginRight: 60,
+  },
+});
 
 function App() {
-  const classes = useStyles()
-  const theme = useTheme()
-  const matchesMd = useMediaQuery(theme.breakpoints.only('md'))
-  const matchesLg = useMediaQuery(theme.breakpoints.up('lg'))
+  const classes = useStyles();
+  const theme = useTheme();
+  const matchesMd = useMediaQuery(theme.breakpoints.only('md'));
+  const matchesLg = useMediaQuery(theme.breakpoints.up('lg'));
 
   const marginLeft = clsx({
     [classes.marginLeftMd]: matchesMd,
-    [classes.marginLeftLg]: matchesLg
-  })
+    [classes.marginLeftLg]: matchesLg,
+  });
 
   return (
     <Router>
@@ -58,7 +58,7 @@ function App() {
         </Box>
       </ThemeProvider>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;

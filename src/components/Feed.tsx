@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
 import {
   Avatar,
   Box,
@@ -9,20 +9,20 @@ import {
   ListItemAvatar,
   ListItemText,
   ListSubheader,
-  Typography
-} from '@material-ui/core'
-import { useAppDispatch, useAppSelector } from '../state/hooks'
-import { getTweets } from '../state/tweetsSlice'
-import { feedStyles } from '../styling/customStyles'
+  Typography,
+} from '@material-ui/core';
+import { useAppDispatch, useAppSelector } from '../state/hooks';
+import { getTweets } from '../state/tweetsSlice';
+import { feedStyles } from '../styling/customStyles';
 
 const Feed = () => {
-  const dispatch = useAppDispatch()
-  const { loading, tweets, error } = useAppSelector((state) => state.tweets)
-  const classes = feedStyles()
+  const dispatch = useAppDispatch();
+  const { loading, tweets, error } = useAppSelector((state) => state.tweets);
+  const classes = feedStyles();
 
   useEffect(() => {
-    dispatch(getTweets())
-  }, [dispatch])
+    dispatch(getTweets());
+  }, [dispatch]);
 
   const showTweets = () => {
     return tweets.map((t) => {
@@ -46,12 +46,18 @@ const Feed = () => {
           </ListItem>
           <Divider />
         </React.Fragment>
-      )
-    })
-  }
+      );
+    });
+  };
 
   return (
-    <Box borderRight={1} borderColor='secondary.dark'>
+    <Box
+      border={1}
+      borderLeft={0}
+      borderTop={0}
+      borderBottom={0}
+      borderColor='secondary.dark'
+    >
       {loading ? (
         'Loading...'
       ) : error ? (
@@ -75,7 +81,7 @@ const Feed = () => {
         </List>
       )}
     </Box>
-  )
-}
+  );
+};
 
-export default Feed
+export default Feed;
