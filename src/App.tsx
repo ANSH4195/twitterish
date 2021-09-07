@@ -1,10 +1,10 @@
 import React from 'react';
-import clsx from 'clsx';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import {
   Box,
+  Container,
   CssBaseline,
-  makeStyles,
+  Grid,
   ThemeProvider,
   useMediaQuery,
   useTheme,
@@ -16,46 +16,37 @@ import Sidebar from './components/Sidebar';
 const drawerWidthLg = 240;
 const drawerWidthMd = 60;
 
-const useStyles = makeStyles({
-  marginLeftMd: {
-    marginLeft: drawerWidthMd + 60,
-    marginRight: 60,
-  },
-  marginLeftLg: {
-    marginLeft: drawerWidthLg + 60,
-    marginRight: 60,
-  },
-});
-
 function App() {
-  const classes = useStyles();
   const theme = useTheme();
   const matchesMd = useMediaQuery(theme.breakpoints.only('md'));
   const matchesLg = useMediaQuery(theme.breakpoints.up('lg'));
-
-  const marginLeft = clsx({
-    [classes.marginLeftMd]: matchesMd,
-    [classes.marginLeftLg]: matchesLg,
-  });
 
   return (
     <Router>
       <ThemeProvider theme={darkTheme}>
         <CssBaseline />
-        <Sidebar
-          drawerWidth={
-            matchesMd
-              ? drawerWidthMd
-              : matchesLg
-              ? drawerWidthLg
-              : drawerWidthLg
-          }
-        />
-        <Box className={marginLeft}>
-          <Switch>
-            <Route path='/' component={Home} />
-          </Switch>
-        </Box>
+        <Container maxWidth='lg'>
+          <Grid container>
+            <Grid item md={1} lg={3}>
+              <Sidebar
+                drawerWidth={
+                  matchesMd
+                    ? drawerWidthMd
+                    : matchesLg
+                    ? drawerWidthLg
+                    : drawerWidthLg
+                }
+              />
+            </Grid>
+            <Grid item sm={12} md={11} lg={9}>
+              <Box py={1}>
+                <Switch>
+                  <Route path='/' component={Home} />
+                </Switch>
+              </Box>
+            </Grid>
+          </Grid>
+        </Container>
       </ThemeProvider>
     </Router>
   );

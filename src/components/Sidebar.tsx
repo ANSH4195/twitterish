@@ -2,7 +2,6 @@ import React from 'react';
 import clsx from 'clsx';
 import {
   Hidden,
-  Drawer,
   List,
   ListItem,
   ListItemIcon,
@@ -11,12 +10,11 @@ import {
   Button,
   IconButton,
   Tooltip,
-  Divider,
+  Box,
+  makeStyles,
 } from '@material-ui/core';
 import TwitterIcon from '@material-ui/icons/Twitter';
-import CreateIcon from '@material-ui/icons/Create';
 import { IDrawerProps } from '../Interfaces';
-import { sidebarStyles } from '../styling/customStyles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFeatherAlt,
@@ -25,6 +23,59 @@ import {
   faSpinner,
 } from '@fortawesome/free-solid-svg-icons';
 import { faBell, faUser } from '@fortawesome/free-regular-svg-icons';
+
+const sidebarStyles = makeStyles({
+  drawer: {
+    height: '100vh',
+    overflowX: 'hidden',
+    position: 'sticky',
+    top: '0',
+  },
+  listItemIconPadding: {
+    display: 'block',
+    minWidth: 0,
+    padding: '0.25rem',
+  },
+  iconSize: {
+    fontSize: '1.25rem',
+  },
+  buttonHover: {
+    justifyContent: 'center',
+    borderRadius: '50rem',
+    '&:hover': {
+      background: '#031019',
+      color: '#1DA1F2',
+      '& .MuiListItemIcon-root': {
+        color: '#1DA1F2',
+      },
+    },
+  },
+  textStyle: {
+    fontSize: '1.25rem',
+    fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
+    fontWeight: 600,
+    lineHeight: '1.75',
+    letterSpacing: '0.02857em',
+  },
+  tweetButton: {
+    padding: '12px 0px',
+    fontSize: '1rem',
+    borderRadius: '50rem',
+    color: 'white',
+    width: '100%',
+    textTransform: 'none',
+    '&:hover': {
+      background: 'rgb(26,145,218)',
+    },
+  },
+  tweetButtonSm: {
+    background: '#1DA1F2',
+    color: 'white',
+    '&:hover': {
+      background: 'rgb(26,145,218)',
+    },
+  },
+});
 
 const Sidebar: React.FC<IDrawerProps> = ({ drawerWidth }) => {
   const classes = sidebarStyles({ drawerWidth });
@@ -38,13 +89,13 @@ const Sidebar: React.FC<IDrawerProps> = ({ drawerWidth }) => {
   ];
 
   return (
-    <Drawer
+    <Box
       className={classes.drawer}
-      variant='permanent'
-      classes={{
-        paper: classes.drawerPaper,
-      }}
-      anchor='left'
+      border={1}
+      borderTop={0}
+      borderBottom={0}
+      borderLeft={0}
+      borderColor='secondary.dark'
     >
       <List style={{ height: '100%' }}>
         <ListItem button className={classes.buttonHover}>
@@ -130,7 +181,7 @@ const Sidebar: React.FC<IDrawerProps> = ({ drawerWidth }) => {
           </ListItem>
         </Tooltip>
       </List>
-    </Drawer>
+    </Box>
   );
 };
 
