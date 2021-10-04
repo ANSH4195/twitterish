@@ -21,15 +21,3 @@ export const searchStyles = makeStyles((theme: Theme) =>
     },
   })
 );
-
-export const feedStyles = makeStyles({
-  tweet: {
-    '&hover': {
-      backgroundColor: 'rgba(255, 255, 255, 0.03)',
-    },
-  },
-  tweeterImage: {
-    alignSelf: 'start',
-    marginTop: '0.55rem',
-  },
-});

@@ -3,17 +3,31 @@ import {
   Avatar,
   Box,
   Divider,
-  Link,
   List,
   ListItem,
   ListItemAvatar,
   ListItemText,
   ListSubheader,
+  makeStyles,
   Typography,
 } from '@material-ui/core';
 import { useAppDispatch, useAppSelector } from '../state/hooks';
 import { getTweets } from '../state/tweetsSlice';
-import { feedStyles } from '../styling/customStyles';
+import TweetContent from './tweets/TweetContent';
+import TweetReactions from './tweets/TweetReactions';
+
+const feedStyles = makeStyles({
+  tweet: {
+    paddingBottom: 0,
+    '&hover': {
+      backgroundColor: 'rgba(255, 255, 255, 0.03)',
+    },
+  },
+  tweeterImage: {
+    alignSelf: 'start',
+    marginTop: '0.55rem',
+  },
+});
 
 const Feed = () => {
   const dispatch = useAppDispatch();
@@ -28,20 +42,25 @@ const Feed = () => {
     return tweets.map((t) => {
       return (
         <React.Fragment key={t.id}>
-          <ListItem button className={classes.tweet}>
+          <ListItem button disableRipple className={classes.tweet}>
             <ListItemAvatar className={classes.tweeterImage}>
               <Avatar src={t.userAvatar} alt={t.userName} />
             </ListItemAvatar>
             <ListItemText
               primary={
-                <Typography variant='body2'>
-                  <Link href='#' color='inherit'>
-                    <strong style={{ fontSize: '0.9rem' }}>{t.userName}</strong>{' '}
-                    <span style={{ color: '#ffffff75' }}>@{t.userHandle}</span>
-                  </Link>
-                </Typography>
+                <TweetContent
+                  userName={t.userName}
+                  userHandle={t.userHandle}
+                  tweetBody={t.body}
+                />
               }
-              secondary={t.body}
+              secondary={
+                <TweetReactions
+                  comments={t.comments.length}
+                  retweets={t.retweets}
+                  likes={t.likes}
+                />
+              }
             />
           </ListItem>
           <Divider />
